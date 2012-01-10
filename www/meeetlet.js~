@@ -1,0 +1,48 @@
+function meeetlet(){
+	this.initialize.apply(this, arguments);
+}
+
+meeetlet.prototype = {
+	initialize : function(host, port, user, password){
+		this.host = host;
+		this.port = port;
+		this.user = user;
+		this.password = password;
+	},
+
+	getMe : function(callback){
+
+	}, 
+
+	getMyFriends : function(callback){
+
+	}, 
+
+	getMyEvents : function(offset, limit, callback){
+
+	}, 
+
+	createPreEvent : function(title, dates, places, budgets, genres, participants, comment){
+
+	}, 
+
+	createEvent : function(title,date, place, budget, genre, participants, comment){
+
+	}, 
+   
+	replyPreEvent : function(eventid, dates, places, budgets, genres, comment){
+
+	}, 
+	replyEvent : function(eventid, attend, comment){
+
+	}, 
+
+	cancelEvent : function(eventid){
+
+	}, 
+
+	inviteFriend : function(eventid, users){
+
+	}
+
+};
